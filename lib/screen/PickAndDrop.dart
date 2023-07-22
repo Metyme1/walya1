@@ -123,7 +123,7 @@ class _PickAndDropState extends State<PickAndDrop> {
                                 dropCountry: widget.pickOrDrop == 'drop'
                                     ? selectedCountry
                                     : widget.dropCountry,
-                                pick_or_drop_date:'pickup',
+                                pick_or_drop_date:widget.pickOrDrop,
                                 selectedPickupdate: widget.pickupDate,
                                 selectedDropdate: widget.dropDate,
                               ),
@@ -146,7 +146,7 @@ class _PickAndDropState extends State<PickAndDrop> {
                                 dropCountry: widget.pickOrDrop == 'drop'
                                     ? selectedCountry
                                     : widget.dropCountry,
-                                pick_or_drop_date: 'pickup',
+                                pick_or_drop_date: widget.pickOrDrop,
                                 selectedPickupdate: widget.pickupDate,
                                 selectedDropdate: widget.dropDate,
                               ),

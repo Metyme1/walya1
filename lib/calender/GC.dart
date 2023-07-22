@@ -168,6 +168,7 @@ class _GregorianCalendarPState extends State<GregorianCalendarP> {
                   if (_requestedField == 'pickup') {
                     setState(() {
                       dateForPickup = selectedDate;
+
                     });
                   } else {
                     setState(() {

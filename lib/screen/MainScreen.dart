@@ -25,8 +25,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  bool isPickupSelected = false;
-  bool isDropSelected = false;
+  bool isPickupSelected = true;
+  bool isDropSelected = true;
   String _selectedPickupLocation = '';
   String _selectedDropLocation = '';
 

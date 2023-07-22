@@ -119,21 +119,23 @@ class _LocationScreenState extends State<LocationScreen> {
                 onTap: () {
                   String _requestedField = widget.pick_or_drop_location;
 
+
                   if (_requestedField == 'pickup') {
                     setState(() {
                       searchResultForPickup = suggestion;
-                       searchResultForDrop = widget.selectedDropLocation;
+                      // searchResultForDrop = widget.selectedDropLocation;
+
                     });
                   } else {
                     setState(() {
                       searchResultForDrop = suggestion;
-                      searchResultForPickup = widget.selectedPickupLocation;
+                    //  searchResultForPickup = widget.selectedPickupLocation;
                     });
                   }
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      // pass necessary parameters to ConfirmScreen()
+
                       builder: (context) =>
                           MainScreen(
                         selectedPickupLocation: searchResultForPickup?? widget.selectedPickupLocation,
@@ -148,8 +150,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 },
               );
             }, onSuggestionSelected: (String suggestion) {  },
-            // onSuggestionSelected:
-            //     (suggestion) {}, // Added this line to fix the error
+
           ),
         ),
       ),
